@@ -1,0 +1,60 @@
+
+================ TEST 1: QUAN LY SINH VIEN ================
+Danh sach ban dau, chua sap xep:
+MaSV    Ho ten            GT    Ngay sinh   Dia chi         Lop       Khoa    
+------------------------------------------------------------------------------
+SV003   Le Van C          Nam   12/05/2005  Ha Noi          CTK45     CNTT    
+SV001   Nguyen An         Nam   01/01/2005  Da Nang         CTK45     CNTT    
+SV005   Pham Thi E        Nu    12/05/2005  Hue             CTK46     CNTT    
+SV002   Tran Binh         Nam   20/09/2004  TP HCM          CTK45     CNTT    
+SV004   Do Thi D          Nu    20/09/2004  Can Tho         CTK46     CNTT    
+
+Danh sach sau khi sap xep tang dan theo maSV:
+MaSV    Ho ten            GT    Ngay sinh   Dia chi         Lop       Khoa    
+------------------------------------------------------------------------------
+SV001   Nguyen An         Nam   01/01/2005  Da Nang         CTK45     CNTT    
+SV002   Tran Binh         Nam   20/09/2004  TP HCM          CTK45     CNTT    
+SV003   Le Van C          Nam   12/05/2005  Ha Noi          CTK45     CNTT    
+SV004   Do Thi D          Nu    20/09/2004  Can Tho         CTK46     CNTT    
+SV005   Pham Thi E        Nu    12/05/2005  Hue             CTK46     CNTT    
+
+Sau khi chen SV000 vao danh sach da sap xep:
+MaSV    Ho ten            GT    Ngay sinh   Dia chi         Lop       Khoa    
+------------------------------------------------------------------------------
+SV000   Hoang Moi         Nam   07/07/2005  Hai Phong       CTK44     CNTT    
+SV001   Nguyen An         Nam   01/01/2005  Da Nang         CTK45     CNTT    
+SV002   Tran Binh         Nam   20/09/2004  TP HCM          CTK45     CNTT    
+SV003   Le Van C          Nam   12/05/2005  Ha Noi          CTK45     CNTT    
+SV004   Do Thi D          Nu    20/09/2004  Can Tho         CTK46     CNTT    
+SV005   Pham Thi E        Nu    12/05/2005  Hue             CTK46     CNTT    
+
+Cac sinh vien co cung ngay sinh:
+MaSV    Ho ten            GT    Ngay sinh   Dia chi         Lop       Khoa    
+------------------------------------------------------------------------------
+SV002   Tran Binh         Nam   20/09/2004  TP HCM          CTK45     CNTT    
+SV003   Le Van C          Nam   12/05/2005  Ha Noi          CTK45     CNTT    
+SV004   Do Thi D          Nu    20/09/2004  Can Tho         CTK46     CNTT    
+SV005   Pham Thi E        Nu    12/05/2005  Hue             CTK46     CNTT    
+
+Sau khi loai bo sinh vien co cung ngay sinh:
+MaSV    Ho ten            GT    Ngay sinh   Dia chi         Lop       Khoa    
+------------------------------------------------------------------------------
+SV000   Hoang Moi         Nam   07/07/2005  Hai Phong       CTK44     CNTT    
+SV001   Nguyen An         Nam   01/01/2005  Da Nang         CTK45     CNTT    
+
+Kiem tra lai danh sach sau xoa:
+Khong tim thay sinh vien cung ngay sinh.
+
+================ TEST 2: JOSEPHUS ================
+N = 5, M = 0 => Thu tu loai: 1, 2, 3, 4 | Nguoi thang: 5
+N = 5, M = 1 => Thu tu loai: 2, 4, 1, 5 | Nguoi thang: 3
+N = 10, M = 1 => Thu tu loai: 2, 4, 6, 8, 10, 3, 7, 1, 9 | Nguoi thang: 5
+N = 10, M = 2 => Thu tu loai: 3, 6, 9, 2, 7, 1, 8, 5, 10 | Nguoi thang: 4
+N = 10, M = 3 => Thu tu loai: 4, 8, 2, 7, 3, 10, 9, 1, 6 | Nguoi thang: 5
+
+Test hieu nang voi N = 100001, M = 1
+Nguoi thang: 68931
+Thoi gian chay: 9.488 ms
+Do phuc tap khi M = 1: O(N) thoi gian, O(N) bo nho.
+
+Tat ca test case da chay xong.
